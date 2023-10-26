@@ -1,12 +1,238 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
-html {
-
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
 }
- body {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
- }
 
- .container {
+body {
+   font-family: Raleway, Helvetica, sans-serif;
+}
+p {
+   font-size: 14px;
+   color: darkgray;
+   line-height: 1.6;
+}
+h1 {
+   font-size: 45px;
+   color: #ffffff;
+}
+h2 {
+   font-size: 28px;
+}
+h3 {
+   font-size: 24px;
+}
+h4 {
+   font-size: 15px;
+   color: white;
+}
+h5 {
+   font-size: 28px;
+   text-align: center;
+   color: rgb(48, 5, 204);
+}
+h2, h3 {
+   color: #59abe3;
+}
+.container {
+   width: 100%;
+   max-width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
+}
+.brand {
+   display: flex;
+   justify-content: space-between;
+   width: 120px;
+}
+.menu {
+   display: flex;
+   flex-direction: row;
+   padding-left: 0;
+   margin-top: 0;
+   margin-bottom: 0;
+}
+.menu li {
+   font-size: 16px;
+   list-style: none;
+}
+.menu li a {
+   text-decoration: none;
+}
 
- }
+header .menu li a:hover {
+   color: #ffcc00;
+}
+img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
+
+header {
+   background-color: #ffffff;
+   height: 80px;
+   padding-top: 30px;
+}
+header .brand {
+   float: left;
+   color: #59abe3;
+}
+header .menu {
+   float: right;
+   margin-bottom: 30px;
+}
+header .menu li {
+   padding-left: 20px;
+}
+header .menu li a {
+   color: #59abe3;
+}
+
+.toggle {
+   display: none;
+}
+
+.screen {
+   background-image: url(../img/4.jpg);
+   background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    padding-top: 200px;
+    min-height: 600px;
+    text-align: center;
+    clear: both;
+}
+.screen .button {
+   display: inline-block;
+   color: #fff;
+   text-decoration: none;
+   font-size: 18px;
+   margin-top: 100px;
+   background-color: rgb(43, 101, 226);
+   padding: 20px 30px;
+   border-radius: 30px;
+}
+.screen .button:hover {
+   background-color: #ffcc00;
+}
+
+.services .service {
+   width: 33.333333%;
+   float: left;
+   padding-left: 15px;
+   padding-right: 15px;
+   margin-top: 30px;
+   margin-bottom: 50px;
+   box-sizing: border-box;
+}
+.services {
+   padding-top: 50px;
+   text-align: center;
+}
+.services .fa {
+   color: #0090e433;
+   margin-bottom: 15px;
+}
+
+.blog {
+   clear: both;
+   padding-top: 50px;
+   padding-bottom: 50px;
+   background-color: #fcfcfc;
+}
+.blog h2 {
+   text-align: center;
+}
+.blog .post {
+   padding-top: 30px;
+   display: inline-block;
+   clear: both;
+}
+.blog .post img {
+   float: left;
+   margin-right: 30px;
+}
+
+.info {
+   display: flex;
+   justify-content: space-around;
+   width: 100%;
+   padding: 0 10px 0 10px;
+   margin-top: 80px;
+   margin-bottom: 40px;
+}
+
+footer {
+   clear: both;
+   padding-top: 50px;
+   padding-bottom: 50px;
+   text-align: center;
+   background-color: #59abe3;
+}
+.footer_line {
+   width: 100%;
+   max-width: 1200px;
+   display: flex;
+   justify-content: center;
+}
+.footer_logo {
+   width: 120px;
+}
+footer .menu li {
+   padding-left: 10px;
+   padding-right: 10px;
+}
+footer .menu li a {
+   color: white;
+}
+footer .menu {
+   display: inline-block;
+   margin-top: 30px;
+   margin-bottom: 15px;
+}
+footer .menu i {
+   color: white;
+   padding: 10px 0 10px 0;
+}
+
+footer .copyright {
+   font-size: 12px;
+   color: #eee;
+}
+
+@media (max-width: 565px) {
+   .brand {
+      margin-left: 15px ;
+   }
+   .menu {
+      display: none;
+   }
+   .toggle {
+      clear: both;
+      display: block;
+      text-align: center;
+      font-size: 18px;
+      border: none;
+      width: 100%;
+      color: white;
+      background: blue;
+   }
+
+   .services .service {
+       width: 100%;
+       float: none;
+   }
+   .blog .post img {
+       float: none;
+       display: block;
+       margin-right: auto;
+       margin-left: auto;
+   }
+   .blog .post {
+       max-width: 280px;
+       margin-left: auto;
+       margin-right: auto;
+       display: block;
+   }
+}
