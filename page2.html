@@ -14,31 +14,23 @@
 
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <div class="brand">
-                    <a href="#" class="logo__img">
-                        <img class="logo__img" src="img/Logo.png" alt="">
-                    </a>
-                </div>
-                <button class="toggle">☰</button>
-                <ul class="menu">
-                    <li><a href="/index.html">Главная</a></li>
-                    <li><a href="#">О компании</a></li>
-                    <li><a href="#">Портфолио</a></li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header>
+    <div class="wrap-logo">
+    <a href="#" class="logo"><img src="img/Logo_white.png"></a>
+    </div>
+    <nav>
+      <a href="/index.html">Главная</a>
+      <a class="active" href="#">О компании</a>
+      <a href="#">Услуги</a>
+      <a href="#">Контакты</a>
+    </nav>
+</header>
     
     <main>
             <div class="info">
                 <div class="row g-3">
                     <div class="col">
-                       <img src="img/5.jpg" class="card-img-top" style="width: 550px;"></div>
+                       <img src="img/6.jpg" class="card-img-top" style="width: 550px;"></div>
                     </div>
                     <div class="col">
                        <div class="p-3"><h3>Наша компания — эксперт в области строительства бассейнов</h3>
@@ -65,7 +57,7 @@
                       </div>
                     <div class="col">
                       <div class="card">
-                        <img src="img/4.jpg" class="card-img-top" alt="...">
+                        <img src="img/7.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Полипропиленовый</h5>
                           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, rem.</p>
@@ -139,34 +131,62 @@
             </td>
         </tr>
         </table>
-                  </div>
-        
-    </main>
-    
-       
-        
-    <footer>
-        <div class="container">
-            <div class="footer_line">
-                <div class="footer_logo">
-                    <a href="#" class="logo__img">
-                        <img class="logo__img" src="img/Logo_white.png" alt="">
-                    </a>
-        </div>
             </div>
-            <nav>
-                <ul class="menu">
-                    <li><a href="#">О компании</a></li>
-                    <li><a href="#">Портфолио</a></li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <i class="fa fa-vk"></i>
-                    <i class="fa fa-telegram"></i>
-                </ul>
-            </nav>
-            <p class="copyright">© 2023 Все права защищены.<br> 
-                Копирование запрещено.</p>
+        
+                  <br>
+                  <div class="consultation-form">
+                    <div class="container">
+                        <div class="row" id="cons-res">
+                            <div class="col-lg-5">
+                                  <div class="consultation-title">Проконсультируйтесь <br>с нашими специалистами</div>
+                                  <p class="form_cons">Оставьте свой номер телефона и мы вам перезвоним в ближайшее время</p>
+                        </div>
+                            <form id="cons_form" class="col-lg-7">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-lg-5 col-md-6">
+                                            <input type="text" name="phone" class="form-control" placeholder="Номер телефона *">
+                                        </div>
+                                        <div class="col-lg-5 col-md-6 cons-name">
+                                            <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-lg-5 col-md-6">
+                                            <button class="btn">Отправить</button>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                          <div class="agree">
+                                                Нажимая кнопку «Отправить» вы соглашаетесь с <a href="#" target="_blank">политикой конфиденциальности</a>                                    
+                                            </div>
+                                         </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                  </div>      
+                  <br>
+    </main>
+
+    
+    <footer>
+      <div class="footer-content">
+        <div class="footer_logo">
+          <img src="/img/Logo_white.png" alt="Логотип">
         </div>
-    </footer>
+          <ul class="footer_menu">
+            <li><a href="/index.html">Главная</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Контакты</a></li>
+            <i class="fa fa-vk"></i>
+            <i class="fa fa-telegram"></i>
+          </ul
+      </div>
+       <p class="copyright">© 2023 Все права защищены.
+  </footer>
 </body>
 </html>
